@@ -1,9 +1,48 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
 <head>
-  <title>Mi prueba</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Invitación Cumpleaños</title>
+
+<link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-  <h1>Hola Areli 🚀</h1>
+
+<!-- Pantalla Inicial -->
+<div id="intro">
+    <h2>✨ Estás Invitado ✨</h2>
+    <button id="openBtn">Abrir Invitación</button>
+</div>
+
+<div class="container">
+<div class="card" id="card">
+
+    <h1>🎉 Cumpleaños de Sofía 🎉</h1>
+    <p class="date">📅 20 de Abril 2026 - 4:00 PM</p>
+
+    <div id="countdown"></div>
+
+    <a class="btn location" 
+       href="https://maps.google.com" 
+       target="_blank">
+       📍 Ver Ubicación
+    </a>
+
+    <a class="btn whatsapp" 
+       href="https://wa.me/5215512345678?text=Hola%20confirmo%20mi%20asistencia"
+       target="_blank">
+       💚 Confirmar Asistencia
+    </a>
+
+</div>
+</div>
+
+<audio id="music" loop>
+    <source src="https://www.bensound.com/bensound-music/bensound-happyrock.mp3" type="audio/mp3">
+</audio>
+
+<script src="script.js"></script>
 </body>
 </html>
