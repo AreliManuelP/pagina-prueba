@@ -1,32 +1,42 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Invitación XV</title>
-    <link rel="stylesheet" href="styles.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Invitación Cumpleaños</title>
+
+<link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
-<!-- Pantalla inicial -->
-<div id="inicio">
-    <h1>Mis XV Años</h1>
-    <button onclick="abrirInvitacion()">Abrir invitación 💌</button>
+<!-- Pantalla Inicial -->
+<div id="intro">
+    <h2>✨ Estás Invitado ✨</h2>
+    <button id="openBtn">Abrir Invitación</button>
 </div>
 
-<!-- Invitación -->
-<div id="invitacion">
-    <div class="card">
-        <img src="https://picsum.photos/300/200" alt="foto">
+<div class="container">
+<div class="card" id="card">
 
-        <h1>Adriana López</h1>
-        <p>Te invito a celebrar conmigo este día tan especial ✨</p>
+    <h1>🎉 Cumpleaños de Sofía 🎉</h1>
+    <p class="date">📅 20 de Abril 2026 - 4:00 PM</p>
 
-        <p><strong>Fecha:</strong> 24 Septiembre 2025</p>
-        <p><strong>Lugar:</strong> Jardín Padilla</p>
+    <div id="countdown"></div>
 
-        <a href="#" class="boton">Confirmar asistencia</a>
-    </div>
+    <a class="btn location" 
+       href="https://maps.google.com" 
+       target="_blank">
+       📍 Ver Ubicación
+    </a>
+
+    <a class="btn whatsapp" 
+       href="https://wa.me/5215512345678?text=Hola%20confirmo%20mi%20asistencia"
+       target="_blank">
+       💚 Confirmar Asistencia
+    </a>
+
+</div>
 </div>
 
 <audio id="music" loop>
@@ -35,5 +45,4 @@
 
 <script src="script.js"></script>
 </body>
-
 </html>
