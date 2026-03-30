@@ -1,30 +1,22 @@
 // Abrir invitación
-document.getElementById("openBtn").addEventListener("click", function(){
-    document.getElementById("intro").style.opacity = "0";
-    setTimeout(function(){
-        document.getElementById("intro").style.display = "none";
-        document.getElementById("card").style.display = "block";
-    }, 800);
-
-    document.getElementById("music").play();
-});
+function abrirInvitacion(){
+    document.getElementById("inicio").style.display = "none";
+    document.getElementById("contenido").style.display = "block";
+}
 
 // Cuenta regresiva
-const eventDate = new Date("April 20, 2026 16:00:00").getTime();
+const fechaEvento = new Date("Sep 24, 2026 00:00:00").getTime();
 
-setInterval(function() {
+const contador = document.getElementById("contador");
 
-    const now = new Date().getTime();
-    const distance = eventDate - now;
+setInterval(function(){
+    const ahora = new Date().getTime();
+    const diferencia = fechaEvento - ahora;
 
-    const days = Math.floor(distance / (1000 * 60 * 60 * 24));
-    const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-    const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-    const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+    const dias = Math.floor(diferencia / (1000 * 60 * 60 * 24));
+    const horas = Math.floor((diferencia % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    const minutos = Math.floor((diferencia % (1000 * 60 * 60)) / (1000 * 60));
 
-    document.getElementById("countdown").innerHTML =
-        "⏳ Faltan " + days + " días " + hours + "h "
-        + minutes + "m " + seconds + "s ";
+    contador.innerHTML = `Faltan ${dias} días ${horas}h ${minutos}m`;
 
 }, 1000);
-

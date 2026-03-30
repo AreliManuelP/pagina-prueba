@@ -1,49 +1,72 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Invitación Cumpleaños</title>
-
-<link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mis XV Años</title>
+    <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
 
-<!-- Pantalla Inicial -->
-<div id="intro">
-    <h2>✨ Estás Invitado ✨</h2>
-    <button id="openBtn">Abrir Invitación</button>
+<!-- 🔥 Pantalla inicial -->
+<div id="inicio">
+    <button onclick="abrirInvitacion()">Abrir invitación 💌</button>
 </div>
 
-<div class="container">
-<div class="card" id="card">
+<!-- 🎉 Contenido principal -->
+<div id="contenido">
 
-    <h1>🎉 MIS XV AÑOS🎉</h1>
-    <h1>Adriana López</h1>
-     <p>Te invito a celebrar conmigo este día tan especial ✨</p>
-    <p class="date">📅 20 de Abril 2026 - 4:00 PM</p>
-     
-    <div id="countdown"></div>
+    <!-- Imagen principal -->
+    <img src="https://i.pinimg.com/1200x/99/27/12/992712c4f97fd1113cf97c43d15f954e.jpg" class="foto-principal">
 
-    <a class="btn location" 
-       href="https://maps.google.com" 
-       target="_blank">
-       📍 Ver Ubicación
-    </a>
+    <!-- Frase -->
+    <p class="frase">“Hoy dejo atrás mi niñez para comenzar una nueva etapa”</p>
 
-    <a class="btn whatsapp" 
+    <!-- Nombre -->
+    <h1>Mis XV Años</h1>
+    <h2>Natalia</h2>
+
+    <!-- Música -->
+    <audio controls>
+        <source src="musica.mp3" type="audio/mpeg">
+    </audio>
+
+    <!-- Fecha -->
+    <p class="fecha">24 Septiembre 2026</p>
+
+    <!-- Cuenta regresiva -->
+    <h3 id="contador"></h3>
+
+    <!-- Foto -->
+    <img src="https://i.pinimg.com/1200x/40/ef/77/40ef7785e2151bb6da5204695ee8f6bb.jpg" class="foto">
+
+    <!-- Misa -->
+    <div class="seccion">
+        <img src="img/icon-iglesia.png" alt="Iglesia">
+        <h3>Misa</h3>
+        <p>Iglesia San Pedro</p>
+        <p>5:00 PM</p>
+    </div>
+
+    <!-- Recepción -->
+    <div class="seccion">
+        <img src="img/icon-ubi.gif" alt="">
+        <h3>Recepción</h3>
+        <p>Salón Jardín</p>
+        <p>7:00 PM</p>
+    </div>
+
+    <!-- WhatsApp -->
+   <a class="btn whatsapp" 
        href="https://wa.me/5215512345678?text=Hola%20confirmo%20mi%20asistencia"
        target="_blank">
        💚 Confirmar Asistencia
     </a>
 
-</div>
-</div>
+    <!-- Final -->
+    <p class="final">Esperamos contar con tu presencia 💖</p>
 
-<audio id="music" loop>
-    <source src="https://www.bensound.com/bensound-music/bensound-happyrock.mp3" type="audio/mp3">
-</audio>
+</div>
 
 <script src="script.js"></script>
 </body>
